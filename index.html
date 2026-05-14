@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVÜTRA — Infraestructura Nutracéutica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #08080A;
+  --bg-2: #0F0F12;
+  --accent: #C8922A;
+  --text: #F0EDE8;
+  --text-muted: #7A7870;
+  --grad-bronze: linear-gradient(135deg, #a67c37 0%, #d4a75a 50%, #8c6221 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; line-height: 1.6; }
+
+/* LOGO OPCIÓN A */
+.logo-text {
+  font-family: 'Syne'; font-size: 1.6rem; font-weight: 800; letter-spacing: 0.18em;
+  text-transform: uppercase; background: var(--grad-bronze); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.u-special { position: relative; display: inline-block; }
+.u-special::after {
+  content: ''; position: absolute; top: -4px; left: 50%; transform: translateX(-50%);
+  width: 14px; height: 3px; background: linear-gradient(to right, #d4a75a 35%, transparent 35%, transparent 65%, #d4a75a 65%);
+}
+
+nav {
+  padding: 1.5rem 5rem; display: flex; justify-content: space-between; align-items: center;
+  background: rgba(8,8,10,0.9); backdrop-filter: blur(15px); position: fixed; width: 100%; top: 0; z-index: 100;
+}
+
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; padding: 10rem 5rem 5rem; align-items: center; }
+h1 { font-family: 'Syne'; font-size: 4.5rem; line-height: 1; margin-bottom: 2rem; }
+h1 span { color: var(--accent); }
+
+.hero-img img { width: 100%; border: 1px solid rgba(255,255,255,0.1); filter: contrast(1.1); }
+
+.showcase { padding: 8rem 5rem; background: var(--bg-2); }
+.showcase h2 { font-family: 'Syne'; font-size: 3rem; text-align: center; margin-bottom: 4rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.card { background: var(--bg); padding: 3rem 2rem; border: 1px solid rgba(255,255,255,0.05); text-align: center; transition: 0.3s; }
+.card:hover { border-color: var(--accent); transform: translateY(-10px); }
+.card img { max-height: 250px; width: auto; margin-bottom: 2rem; }
+
+.btn { border: 1px solid var(--accent); color: var(--accent); padding: 1rem 2rem; text-decoration: none; display: inline-block; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo-text">NOV<span class="u-special">U</span>TRA</div>
+  <div style="color: var(--text-muted); font-size: 0.8rem;">INFRAESTRUCTURA B2B</div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>La base de tu próxima <span>innovación.</span></h1>
+    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">Somos la infraestructura completa que permite crear, lanzar y escalar productos nutracéuticos desde cero.</p>
+    <a href="#" class="btn">Agendar llamada estratégica</a>
+  </div>
+  <div class="hero-img">
+    <img src="c177ab3d-75d7-4c64-b131-4ea42501f01c.png" alt="NOVÜTRA Hero">
+  </div>
+</section>
+
+<section class="showcase">
+  <h2>Capacidades de Formato</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="Gemini_Generated_Image_lg42gklg42gklg42-removebg-preview.png" alt="Reset">
+      <h3>STICK PACKS</h3>
+      <p style="color: var(--text-muted); margin-top: 1rem;">Diseño ergonómico y precisión científica.</p>
+    </div>
+    <div class="card">
+      <img src="Gemini_Generated_Image_8v3qwi8v3qwi8v3q-removebg-preview.png" alt="Ritual">
+      <h3>PREMIUM BOXES</h3>
+      <p style="color: var(--text-muted); margin-top: 1rem;">Presentación rígida para marcas de lujo.</p>
+    </div>
+    <div class="card">
+      <img src="Gemini_Generated_Image_p03jrkp03jrkp03j-removebg-preview.png" alt="Longevity">
+      <h3>DOYPACK SYSTEM</h3>
+      <p style="color: var(--text-muted); margin-top: 1rem;">Máxima barrera de protección y escala.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
